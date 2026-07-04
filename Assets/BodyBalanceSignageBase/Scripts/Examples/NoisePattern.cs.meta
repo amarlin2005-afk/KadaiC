@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cfc45550f48f73a40a2f4425b68bac0f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _fbmShader: {fileID: -6465566751694194690, guid: 8b11366dd8d08a34babb57e198a8a480,
+      type: 3}
+  - ColorTexture: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

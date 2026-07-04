@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3533420739583172728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2672826705862985499}
+  - component: {fileID: 3859144517636329492}
+  - component: {fileID: 7304078163182387979}
+  m_Layer: 0
+  m_Name: BodyBalanceManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2672826705862985499
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3533420739583172728}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3859144517636329492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3533420739583172728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2642298063fd05f4eae49b4e3aab1ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BalanceWiiBoardOscReceiver
+  Port: 9000
+  Address: /centerOfGravity
+  ShowDebugLog: 0
+--- !u!114 &7304078163182387979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3533420739583172728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42de1a728f5446498e9ed5710507fd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MouseEmulator
+  _oscReceiver: {fileID: 3859144517636329492}
+  ValueWeight: 1
+  DragNormalizeRatio: 0.5
+  ClampValue: 1
+  SendZeroWhenReleased: 1
+  ShowCenterOfGravityLabel: 1
+  ShowLabelOnlyWhileDragging: 1
+  LabelOffset: {x: 16, y: 16}
+  LabelFontSize: 18
+  LabelTextColor: {r: 1, g: 1, b: 1, a: 1}
+  LabelBackgroundColor: {r: 0, g: 0, b: 0, a: 0.65}
+  _clickStartPosition: {x: 0, y: 0}
+  _currentMousePosition: {x: 0, y: 0}
+  _diffPosition: {x: 0, y: 0}
+  _normalizedDiffPosition: {x: 0, y: 0}
+  _centerOfGravity: {x: 0, y: 0}
+  _isPressedLeftMouseButton: 0
